@@ -7,10 +7,10 @@ const btnEncriptar = document.querySelector('.boton-encriptar');
 btnEncriptar.addEventListener('click', function(evento){
 
     evento.preventDefault();
+    
 
     if (!(texto.value.trim().length === 0)) {
-        
-        
+
         mensajeEncriptado(encriptar(texto.value));
         ocultar();
         botonCopiar();
@@ -156,8 +156,11 @@ btnDesencriptar.addEventListener('click', function(evento){
     
 });
 
-/* const text = document.querySelector('#texto');
-text.addEventListener('click', function(evento){
-    
-    
-}); */
+const updateTexto = document.querySelector('#texto');
+
+updateTexto.addEventListener('input', function(e){
+    if (updateTexto.value == "" ) {
+        window.location.reload();
+    }
+
+});

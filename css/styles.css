@@ -85,6 +85,8 @@ box-shadow: -1px 7px 12px 3px rgba(0,0,0,0.18);
     height: 50rem;
     resize: none;
     border: none;
+    text-transform: lowercase;
+    cursor: text;
     
 }
 
